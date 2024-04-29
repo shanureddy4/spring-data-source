@@ -25,9 +25,15 @@ public class JdbcDaoImpl{
     private JdbcTemplate jdbcTemplate;
 
 
-    public int getCircleCount() throws SQLException {
+    public int getCircleCount(){
         String sql = "SELECT COUNT(*) from circle";
         int result = jdbcTemplate.queryForObject(sql,Integer.class);
+        return result;
+    }
+
+    public String getCircleName(int circleId){
+        String sql = "SELECT NAME FROM CIRCLE WHERE id = ?";
+        String result = jdbcTemplate.queryForObject(sql,new Object[] {circleId}, String.class);
         return result;
     }
 }

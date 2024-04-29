@@ -11,5 +11,6 @@ public class Main {
  ApplicationContext ctx = new ClassPathXmlApplicationContext("App/spring.xml");
  JdbcDaoImpl jdbcDao = ctx.getBean("jdbcDaoImpl",JdbcDaoImpl.class);
         System.out.println(jdbcDao.getCircleCount());
+        System.out.println(jdbcDao.getCircleName(1));
     }
 }
