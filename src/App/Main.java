@@ -12,5 +12,7 @@ public class Main {
  JdbcDaoImpl jdbcDao = ctx.getBean("jdbcDaoImpl",JdbcDaoImpl.class);
         System.out.println(jdbcDao.getCircleCount());
         System.out.println(jdbcDao.getCircleName(1));
+        System.out.println(jdbcDao.getCircle(1).name);
+        System.out.println(jdbcDao.getAllCircles().size());
     }
 }
