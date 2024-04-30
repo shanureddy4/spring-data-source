@@ -13,8 +13,8 @@ public class Main {
 //        System.out.println(jdbcDao.getCircleCount());
 //        System.out.println(jdbcDao.getCircleName(1));
 //        System.out.println(jdbcDao.getCircle(1).name);
-        //jdbcDao.insertCircle(new Circle(3,"Second circle"));
+        jdbcDao.insertCircle(new Circle(6,"sixth circle"));
         System.out.println(jdbcDao.getAllCircles().size());
-        jdbcDao.createTriangle();
+       // jdbcDao.createTriangle();
     }
 }
