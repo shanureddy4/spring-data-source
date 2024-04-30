@@ -18,7 +18,9 @@
         <property name="driverClassName" value="org.apache.derby.client.ClientAutoloadedDriver"/>
         <property name="url" value="jdbc:derby://localhost:1527/db" />
     </bean>
-
+<bean id="daoClass" class="App.DaoClass">
+    <property name="dataSource" ref="dataSource"/>
+</bean>
     <!--    <bean id="java.triangle" class="java.triangle" />-->
 
 </beans>

@@ -26,7 +26,6 @@ public class JdbcDaoImpl{
         this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
     }
 
-
   private DataSource dataSource;
 
     private JdbcTemplate jdbcTemplate;
